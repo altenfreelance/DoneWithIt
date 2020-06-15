@@ -44,5 +44,6 @@ const styles = StyleSheet.create({
     paddingTop: Platform.OS === "android" ? StatusBar.currentHeight : 0,
     flex: 1,
     fontFamily: "Cochin",
+    fontSize: 30,
   },
 });
