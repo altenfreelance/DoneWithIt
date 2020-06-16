@@ -2,7 +2,7 @@ import React from "react";
 import { Text, StyleSheet, View, TouchableOpacity } from "react-native";
 
 import colors from "../config/colors";
-import brandingStyles from "../config/styles";
+import brandingFonts from "../config/fonts";
 
 const styles = StyleSheet.create({
   button: {
@@ -15,7 +15,7 @@ const styles = StyleSheet.create({
   },
   text: {
     color: colors.light,
-    ...brandingStyles.font.normal,
+    ...brandingFonts.fonts.normal,
     textTransform: "uppercase",
   },
 });

@@ -14,7 +14,7 @@ const defaultFontSize = {
 };
 
 export default {
-  font: StyleSheet.create({
+  fonts: StyleSheet.create({
     normal: {
       ...defaultFontSize,
       ...fontFamily,

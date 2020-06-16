@@ -2,7 +2,7 @@ import React from "react";
 import { ImageBackground, View, StyleSheet, Text, Image } from "react-native";
 
 import colors from "../config/colors";
-import brandStyles from "../config/styles";
+import brandFonts from "../config/fonts";
 import OurButton from "../components/OurButton";
 
 export default function WelcomeScreen(props) {
@@ -17,7 +17,7 @@ export default function WelcomeScreen(props) {
           style={fileStyles.logo}
           source={require("../assets/logo-red.png")}
         ></Image>
-        <Text style={[brandStyles.font.normalCaption, { paddingVertical: 15 }]}>
+        <Text style={[brandFonts.font.normalCaption, { paddingVertical: 15 }]}>
           Sell What You Don't Need
         </Text>
       </View>
