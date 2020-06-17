@@ -3,9 +3,13 @@ import { SafeAreaView, StyleSheet } from "react-native";
 
 import Constants from "expo-constants";
 
-export default function Safecreen(props) {
+export default function Safecreen({ children, backgroundColor = "white" }) {
   return (
-    <SafeAreaView style={styles.screenContainer}>{props.children}</SafeAreaView>
+    <SafeAreaView
+      style={[styles.screenContainer, { backgroundColor: backgroundColor }]}
+    >
+      {children}
+    </SafeAreaView>
   );
 }
 
