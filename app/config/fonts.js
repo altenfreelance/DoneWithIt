@@ -14,19 +14,17 @@ const defaultFontSize = {
 };
 
 export default {
-  fonts: StyleSheet.create({
-    normal: {
-      ...defaultFontSize,
-      ...fontFamily,
-    },
-    large: {
-      fontSize: 40,
-      ...fontFamily,
-    },
-    normalCaption: {
-      fontSize: 25,
-      fontWeight: "600",
-      ...fontFamily,
-    },
-  }),
+  normal: {
+    ...defaultFontSize,
+    ...fontFamily,
+  },
+  large: {
+    fontSize: 40,
+    ...fontFamily,
+  },
+  normalCaption: {
+    fontSize: 25,
+    fontWeight: "600",
+    ...fontFamily,
+  },
 };

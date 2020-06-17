@@ -52,7 +52,6 @@ export default function MyAccountScreen() {
         <ListItem
           title="Log Out"
           style={styles.logout}
-          // iconComponent={<Image source={require("../assets/andrew.jpeg")} />}
           iconComponent={<MCIcon iconName="logout" backgroundColor="#ffe66d" />}
         />
       </View>
