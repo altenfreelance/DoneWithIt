@@ -13,6 +13,9 @@ export default function ListItem({
   iconComponent,
   size = 35,
   underlayColor = colors.nuetralLight,
+  onPress = () => {
+    console.log(`No onPress function was passed to ListItem ${title}`);
+  },
 }) {
   const styles = StyleSheet.create({
     container: { paddingVertical: 5 },
@@ -34,13 +37,13 @@ export default function ListItem({
   return (
     <TouchableHighlight
       style={[styles.container, style]}
-      onPress={() => {}}
+      onPress={onPress}
       underlayColor={underlayColor}
     >
       <View style={styles.subContainer}>
         {iconComponent}
         <View style={styles.titleContainer}>
-          <AppHeader>{title}</AppHeader>
+          {title && <AppHeader>{title}</AppHeader>}
           {subtitle && <AppSubtitle>{subtitle}</AppSubtitle>}
         </View>
       </View>

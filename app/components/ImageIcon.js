@@ -1,20 +1,13 @@
 import React from "react";
 import { View, StyleSheet, Image } from "react-native";
+import sizes from "../config/sizes";
 
-export default function MCIcon({ size = 35, source }) {
-  const containerSize = size * 1.5;
+export default function MCIcon({ size = sizes.defaultIconSize, source }) {
   const styles = StyleSheet.create({
-    circle: {
-      width: containerSize,
-      height: containerSize,
-      justifyContent: "center",
-      alignItems: "center",
-      borderRadius: size,
-    },
     image: {
-      height: containerSize,
-      width: containerSize,
-      borderRadius: containerSize / 2,
+      height: size,
+      width: size,
+      borderRadius: size / 2,
     },
   });
   return (
@@ -23,4 +16,3 @@ export default function MCIcon({ size = 35, source }) {
     // </View>
   );
 }
-const defaultSize = 75;

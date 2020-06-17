@@ -1,26 +1,26 @@
 import React from "react";
 import { View, StyleSheet } from "react-native";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
+import sizes from "../config/sizes";
 
 export default function MCIcon({
   iconName,
   backgroundColor = "black",
   color = "white",
-  size = 35,
+  size = sizes.defaultIconSize,
 }) {
-  const containerSize = size * 1.5;
   const styles = StyleSheet.create({
     circle: {
-      width: containerSize,
-      height: containerSize,
+      width: size,
+      height: size,
       justifyContent: "center",
       alignItems: "center",
-      borderRadius: size,
+      borderRadius: size / 2,
     },
   });
   return (
     <View style={[styles.circle, { backgroundColor: backgroundColor }]}>
-      <MaterialCommunityIcons name={iconName} color={color} size={size} />
+      <MaterialCommunityIcons name={iconName} color={color} size={size / 1.5} />
     </View>
   );
 }

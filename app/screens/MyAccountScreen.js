@@ -34,9 +34,10 @@ export default function MyAccountScreen() {
           title="Andrew Alten"
           subtitle="altenfreelance@gmail.com"
           iconComponent={
-            <ImageIcon source={require("../assets/andrew.jpeg")} size={50} />
+            <ImageIcon source={require("../assets/andrew.jpeg")} size={70} />
           }
           style={styles.profileAvatar}
+          onPress={() => alert("Is this working?")}
         />
 
         <FlatList
